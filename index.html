@@ -11,7 +11,13 @@
   <meta property="og:url" content="https://dojun.net/">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff2" crossorigin>
   <style>
+    @font-face {
+      font-family: 'Paperlogy';
+      src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-9Black.woff2') format('woff2');
+      font-weight: 900; font-style: normal; font-display: swap;
+    }
     :root {
       --bg: #FFFFFF;
       --text: #111111;
@@ -68,8 +74,9 @@
     /* HERO */
     .hero { padding: clamp(48px, 9vw, 140px) 0 clamp(32px, 5vw, 72px); }
     .hero-title {
-      font-size: clamp(44px, 9.2vw, 148px);
-      font-weight: 800; line-height: 1.02; letter-spacing: -0.045em;
+      font-family: 'Paperlogy', 'Pretendard', sans-serif;
+      font-size: clamp(46px, 9.6vw, 156px);
+      font-weight: 900; line-height: 0.98; letter-spacing: -0.035em;
       word-break: keep-all;
     }
     .hero-sub {
@@ -77,8 +84,8 @@
       margin-top: clamp(16px, 2.4vw, 32px);
     }
     .hero-3p {
-      font-size: clamp(18px, 2.2vw, 32px); font-weight: 500;
-      letter-spacing: -0.02em; color: var(--muted);
+      font-size: clamp(14px, 1.5vw, 22px); font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted);
     }
     .play {
       display: inline-flex; align-items: center; gap: 12px;
