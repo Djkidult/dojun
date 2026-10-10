@@ -151,7 +151,11 @@
 
     /* FOOTER */
     footer { border-top: 1px solid var(--line); }
-    footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 28px; padding-bottom: 28px; font-size: 13px; color: var(--muted); }
+    footer .wrap { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px 32px; padding-top: 36px; padding-bottom: 36px; font-size: 13px; line-height: 1.75; color: var(--muted); }
+    .foot-name { color: var(--text); font-weight: 700; }
+    .foot-info { max-width: 720px; }
+    .foot-info a:hover { color: var(--text); }
+    @media (max-width: 639px) { footer .wrap { font-size: 12px; } }
 
     /* MODAL */
     .modal { position: fixed; inset: 0; z-index: 100; background: rgba(255,255,255,0.97); display: none; align-items: center; justify-content: center; padding: var(--pad); }
@@ -278,8 +282,12 @@
 
   <footer>
     <div class="wrap">
-      <div>© 2026 주식회사 도전감</div>
-      <div>dj@dojun.net</div>
+      <div class="foot-info">
+        <div><span class="foot-name">Dojun Inc.</span> (DOJUNGAM Inc.) · Video Production Studio · Founded January 2024</div>
+        <div>CEO Sangwoo Kim · Business Registration No. 223-88-03160</div>
+        <div>Yongin, Gyeonggi-do, South Korea · <a href="mailto:dj@dojun.net">dj@dojun.net</a></div>
+      </div>
+      <div>© 2026 Dojun Inc.</div>
     </div>
   </footer>
 
